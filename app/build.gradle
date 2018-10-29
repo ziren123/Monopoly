@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.ly.taucoin"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+
+    greendao {
+        schemaVersion 1//<--数据库的版本，用于升级时候进行更改
+        daoPackage 'com.example.greendaodemo.gen'//这个是生成DAOs、DaoMaster、DaoSession代码保存的包名,默认为entities所在包名
+        targetGenDir 'src/main/java'//生成DAOs、DaoMaster、DaoSession的目录。默认为build/generated/source/greendao
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    /*compile 'com.facebook.android:facebook-android-sdk:4.6.0'*/
+    /* implementation 'com.facebook.android:facebook-login:[4,5)'*/
+
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation files('libs/bcprov-jdk15on-160.jar')
+    implementation 'com.google.zxing:zxing-parent:3.3.3'
+
+
+    implementation 'org.greenrobot:greendao:3.2.2'
+
+   /* implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'org.jboss.resteasy:resteasy-rxjava2:4.0.0.Beta5'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'*/
+}

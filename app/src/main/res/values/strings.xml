@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+
+    <string name="not_supported">Wechat brower is not supported.</string>
+    <string name="testnet">Welcome to taucoin testnet</string>
+    <string name="laverdetstein">Donna Albghieebjbcb Laverdetstein</string>
+    <string name="balance">Balance</string>
+    <string name="club">Harvest Club</string>
+    <string name="addresses">Key &amp; Addresses</string>
+    <string name="bounty">Bounty</string>
+    <string name="send_and_receive">Send And Receive</string>
+    <string name="lagout">Logout</string>
+
+    <string name="taucoin_testnet">Taucoin Testnet</string>
+    <string name="taucoin_io">taucoin.io</string>
+    <string name="facebook">Facebook</string>
+    <string name="tauhome">TAU Home</string>
+    <string name="receive_100">100 Tau will be award to you, each month you will receive 100 Tau by login for 10 months.</string>
+
+    <string name="mainnet_is_on">Balance will be transferred to mainnet automatically when mainnet is on. </string>
+
+
+    <string name="application_id">1937079509684312</string>
+
+
+    <string name="facebook_app_id">240844126774866</string>
+    <string name="fb_login_protocol_scheme">fb240844126774866</string>
+
+    <string name="facebook_app_id1">1274778662662180</string>
+    <string name="fb_login_protocol_scheme1">fb1274778662662180</string>
+
+
+</resources>

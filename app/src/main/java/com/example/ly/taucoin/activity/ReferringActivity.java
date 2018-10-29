@@ -1,0 +1,24 @@
+package com.example.ly.taucoin.activity;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+
+import com.example.ly.taucoin.R;
+
+public class ReferringActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_referring);
+
+        findViewById(R.id.referring_back_wallet_home).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ReferringActivity.this,MainActivity.class));
+            }
+        });
+    }
+}

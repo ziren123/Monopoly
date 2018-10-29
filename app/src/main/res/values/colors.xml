@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="wallet_home_color1">#2BBBAD</color>
+    <color name="wallet_home_color11">#144F42</color>
+    <color name="wallet_home_color2">#1F8BE2</color>
+    <color name="wallet_home_color22">#0F447C</color>
+    <color name="wallet_home_color3">#F44336</color>
+    <color name="wallet_home_color33">#841B19</color>
+    <color name="wallet_home_color4">#4CAF50</color>
+    <color name="wallet_home_color44">#176228</color>
+    <color name="wallet_home_color5">#2196F3</color>
+    <color name="wallet_home_color55">#00508D</color>
+</resources>
